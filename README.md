@@ -44,7 +44,7 @@ $= 3(3T(\frac{n}{9}) + \frac{n^5}{3}) + n^5$
 
 $= 9T(\frac{n}{9}) + 3(\frac{n^5}{3}) + n^5$
 
-$= 3^i T(\frac{n}{3^i}) + \sum_{j = 0}^{i-1} 3^j(\frac{n}{3^j})^5$
+$= 3^i T(\frac{n}{3^i}) + \sum_{j=0}^{i-1} 3^j(\frac{n}{3^j})^5$
 
 As $j$ gets greater we see that the sum converges more and more to a constant times $n^5$, say $c = 2$
 
