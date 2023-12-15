@@ -31,3 +31,27 @@ function mystery(n) {
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
+
+$T(n) = 1$ if $n \leq 1$ and 
+
+$T(n) = 3T(\frac{n}{3}) + n^5$ otherwise
+
+We see that 
+
+$T(n) = 3T(\frac{n}{3}) + n^5$
+
+$= 3(3T(\frac{n}{9}) + \frac{n^5}{3}) + n^5$
+
+$= 9T(\frac{n}{9}) + 3(\frac{n^5}{3}) + n^5$
+
+$= 3^i T(\frac{n}{3^i}) + \sum_{j=0}^{i-1} 3^j(\frac{n}{3^j})^5$
+
+As $j$ gets greater we see that the sum converges more and more to a constant times $n^5$, say $c = 2$
+
+Which we then get $3^i T(\frac{n}{3^i}) + 2n^5$
+
+And if we were to say $i = log_{3}n ...$
+
+$=> nT(1) + 2n^5$
+
+$= n + 2n^5 \in O(n^5)$
