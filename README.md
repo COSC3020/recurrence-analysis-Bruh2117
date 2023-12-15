@@ -54,4 +54,4 @@ And if we were to say $i = log_{3}n ...$
 
 $=> nT(1) + 2n^5$
 
-= n + 2n^5 \in O(n^5)$
+$= n + 2n^5 \in O(n^5)$
